@@ -1,0 +1,1194 @@
+:root {
+    --coral: #EE4D47;
+    --text: #402B2B;
+    --textmenu: #FFFFFF;
+    --shadow: #FDE1E1;
+    --menusize: 16px;
+    --captor: 24px;
+    --h2: 48px;
+    --textsize: 18px;
+    --fontbold: bold;
+    --radius: 5px;
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: DM;
+    src: url(../assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    background-color: #FEF8F5;
+}
+
+/*HEADER*/
+header {
+    width: 90%;
+    padding-left: 200px;
+    padding-top: 50px;
+    background-image: url(../assets/images/mobel.svg), url(../assets/images/Scene.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom, left top;
+}
+
+/*for making HAMBURGER on Mobile version*/
+.hamburger {
+    display: none;
+}
+
+.menu {
+    width: 76.8%;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(238, 77, 71, 0.4);
+    position: fixed;
+    z-index: 15;
+}
+
+nav {
+    width: 53%;
+    font-family: rubik;
+    font-size: var(--menusize);
+    color: var(--textmenu);
+    font-weight: var(--fontbold);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li {
+    width: 21%;
+}
+
+#submit {
+    width: 30%;
+    padding: 25px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: var(--textmenu);
+    background-color: var(--coral);
+    font-weight: var(--fontbold);
+    font-size: var(--menusize);
+}
+
+.h1 {
+    width: 60%;
+    padding-top: 100px;
+    font-size: 96px;
+    line-height: 100%;
+    font-family: DM;
+    color: var(--textmenu);
+}
+
+/* Button-GET STARTED*/
+.submit2 {
+    width: 20%;
+    margin-top: 60px;
+    margin-bottom: 520px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: var(--textmenu);
+    background-color: var(--coral);
+    font-weight: var(--fontbold);
+    font-size: var(--menusize);
+}
+
+.submit2 i {
+    color: var(--textmenu);
+    padding: 23px;
+    /*needs to review*/
+}
+
+/*FIRST SECTION*/
+.section1 {
+    width: 90%;
+    padding: 200px 0px 100px 150px;
+    font-family: rubik;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    width: 52%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: rubik;
+    color: var(--coral);
+    font-size: var(--captor);
+    font-weight: var(--fontbold);
+}
+
+.text1 {
+    width: 95%;
+    padding: 50px 0px;
+    font-size: var(--textsize);
+    color: var(--text);
+    line-height: 40px;
+}
+
+/*A div that is used in FOOTER too*/
+.box {
+    width: 100%;
+    padding: 25px;
+    border-left: 10px solid var(--coral);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    background: #FCDDD4;
+    font-family: rubik;
+    font-size: var(--captor);
+    line-height: 36px;
+}
+
+/*SECOND SECTION*/
+.section2 {
+    width: 90%;
+    padding: 100px 0px 150px 50px;
+    font-family: rubik;
+    display: flex;
+    justify-content: space-between;
+}
+
+.operator {
+    width: 56%;
+}
+
+.howtoapply {
+    width: 40%;
+    padding: 50px 0px 50px 50px;
+}
+
+.text2 {
+    width: 100%;
+    padding-top: 50px;
+    font-family: rubik;
+    font-size: var(--textsize);
+    color: var(--text);
+    line-height: 40px;
+}
+
+/*THIRD SECTION*/
+.section3 {
+    width: 90%;
+    padding-left: 140px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.faq {
+    width: 90%;
+    padding-top: 100px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+}
+
+.item {
+    width: 100%;
+    padding-top: 150px;
+}
+
+.pink {
+    width: 72%;
+    height: 100%;
+    background: #FDEDE8;
+    border-radius: 200px 0px 0px 0px;
+    background-image: url(../assets/images/Group\ 14.svg);
+    background-repeat: no-repeat;
+    background-position: right 100px;
+    position: absolute;
+    right: 0;
+}
+
+h3 {
+    width: 50%;
+    padding-top: 40px;
+    font-family: DM;
+    color: var(--text);
+    font-weight: var(--fontbold);
+    font-size: var(--h2);
+}
+
+/*All divs with questions*/
+.questions {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.question1 {
+    width: 48%;
+}
+
+.question2 {
+    width: 48%;
+}
+
+/*First part of divs(Question1) which include 2 divs*/
+/*First of 2 divs*/
+.first {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button1 {
+    width: 98%;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    background-color: var(--textmenu);
+    box-shadow: 0px 7px 5px var(--shadow);
+    display: flex;
+}
+
+.button2 {
+    width: 98%;
+    padding: 20px 5px;
+    background-image: linear-gradient(to bottom, #FEEBE9, #FFF7F5);
+    display: flex;
+}
+
+/*Second one*/
+.second {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button3 {
+    width: 98%;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    background-color: var(--textmenu);
+    box-shadow: 0px 7px 5px var(--shadow);
+    display: flex;
+}
+
+.question2 .button3:last-child {
+    background-color: #F9CDC8;
+}
+
+.question2 .button3:last-child .text3 {
+    color: var(--coral);
+    text-align: center;
+}
+
+/*Bold text type with one line*/
+.text3 {
+    width: 90%;
+    padding: 35px;
+    font-family: rubik;
+    font-size: var(--textsize);
+    font-weight: var(--fontbold);
+    color: var(--text);
+}
+
+/*text type (Not Bold)*/
+.text3-1 {
+    width: 90%;
+    padding: 20px;
+    font-family: rubik;
+    font-size: var(--textsize);
+    color: var(--text);
+}
+
+/*Bold text type with two lines*/
+.text3-2 {
+    width: 90%;
+    padding: 35px;
+    font-family: rubik;
+    font-size: var(--textsize);
+    font-weight: var(--fontbold);
+    color: var(--text);
+}
+
+/*SECTION FOUR*/
+.section4 {
+    width: 90%;
+    padding: 200px 0px 200px 200px;
+}
+
+.aboutus {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Div including to divs with cilents*/
+.leftpart {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.icons {
+    width: 10%;
+    margin-right: 100px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    color: var(--coral);
+    padding: 45px 0px;
+}
+
+.icons a:first-child {
+    opacity: 0.4;
+}
+
+.clients {
+    width: 98%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.client {
+    width: 48.5%;
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    background-color: var(--textmenu);
+    box-shadow: 7px 7px 7px var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text4 {
+    width: 90%;
+    font-family: rubik;
+    font-size: var(--textsize);
+    color: var(--text);
+    line-height: 40px;
+}
+
+.person {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+span {
+    font-family: roboto;
+    font-weight: var(--fontbold);
+}
+
+/*FOOTER*/
+footer {
+    width: 90%;
+    padding-top: 120px;
+}
+
+.trekmobile {
+    position: absolute;
+    z-index: 1;
+}
+
+.mainfooter {
+    width: 100%;
+    margin-top: 160px;
+    padding: 100px 0px 100px 200px;
+    background: #0F264C;
+    background-image: url(../assets/images/Vector\ 13.svg);
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    border-radius: 0px 100px 0px 0px;
+    display: flex;
+}
+
+/*DIV FOR box*/
+footer .mainfooter .form .box {
+    background: none;
+    color: var(--textmenu);
+    font-size: 20px;
+}
+
+/*Form for appling in*/
+.miniform {
+    width: 35%;
+    padding: 30px 70px;
+    margin-top: -200px;
+    margin-left: 450px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    background: var(--textmenu);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--textsize);
+    font-family: rubik;
+    position: absolute;
+    z-index: 1;
+}
+
+#name {
+    padding: 12px 30px;
+    font-size: var(--textsize);
+    font-family: rubik;
+    font-weight: var(--fontbold);
+    border: 2px solid var(--coral);
+    box-sizing: border-box;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
+}
+
+#email {
+    padding: 12px 30px;
+    font-size: var(--textsize);
+    font-family: rubik;
+    border: 1px solid rgba(238, 77, 71, 0.5);
+    border-radius: var(--radius);
+}
+
+footer .miniform .submit2 {
+    width: 61%;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding-left: 7px;
+    align-self: flex-start;
+}
+
+footer .mainfooter .menu {
+    margin: 300px 0px 50px 0px;
+}
+
+/*The last part under menu*/
+.last {
+    width: 100%;
+    padding: 50px 150px 50px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last p {
+    padding-top: 35px;
+}
+
+.social {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social i {
+    font-size: 25px;
+    line-height: 2px;
+}
+
+@media (min-width:1097px) and (max-width:1315px) {
+    header {
+        width: 98%;
+        padding: 50px 150px;
+        background-size: 50%, 130%;
+    }
+
+    .menu {
+        width: 85%;
+        padding: 5px;
+    }
+
+    .submit2 {
+        width: 25%;
+        margin-bottom: 400px;
+    }
+
+    .h1 {
+        padding-top: 150px;
+        width: 90%;
+    }
+
+    .section1 {
+        width: 98%;
+    }
+
+    .section2 {
+        width: 98%;
+    }
+
+    .howtoapply {
+        width: 56%;
+    }
+
+    .section3 {
+        width: 98%;
+        padding-left: 100px;
+    }
+
+    .pink {
+        background-size: 70%;
+    }
+
+    .questions {
+        padding-top: 100px;
+    }
+
+    .section4 {
+        width: 98%;
+        padding: 100px 50px 100px 150px;
+    }
+
+    .icons {
+        margin-right: 295px;
+    }
+
+    .clients {
+        padding-top: 0px;
+    }
+
+    .text4 {
+        width: 95%;
+    }
+
+    footer {
+        width: 98%;
+        padding-top: 100px;
+    }
+
+    .mainfooter {
+        padding: 100px 0px 100px 150px;
+    }
+
+    .miniform {
+        width: 38%;
+        margin-left: 400px;
+    }
+
+    footer .miniform .submit2 {
+        width: 72%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1096px) {
+    header {
+        width: 100%;
+        padding: 50px;
+        background-size: 50%, 120%;
+    }
+
+    .menu {
+        width: 93%;
+        padding: 5px;
+    }
+
+    .submit2 {
+        width: 30%;
+        margin-bottom: 240px;
+        margin-top: 30px;
+    }
+
+    .h1 {
+        width: 70%;
+        padding-top: 100px;
+        font-size: 60px;
+    }
+
+    .section1 {
+        width: 100%;
+        padding: 150px 0px 50px 50px;
+        flex-direction: column-reverse;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .text1 {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .box {
+        margin-top: 50px;
+    }
+
+    .section1 .box {
+        width: 95%;
+    }
+
+    .section2 {
+        width: 100%;
+        padding: 100px 10px;
+        flex-direction: column;
+    }
+
+    .operator {
+        width: 90%;
+    }
+
+    .howtoapply {
+        width: 90%;
+    }
+
+    .section3 {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .questions {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    .faq {
+        width: 100%;
+    }
+
+    .pink {
+        width: 60%;
+        background-size: 75%;
+    }
+
+    .section4 {
+        width: 100%;
+        padding: 120px 50px 50px 50px;
+    }
+
+    .clients {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .icons {
+        margin-right: 230px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .miniform {
+        margin-left: 400px;
+        padding: 20px 40px;
+    }
+
+    .mainfooter {
+        padding: 100px 0px 100px 50px;
+    }
+
+    footer .miniform .submit2 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .last {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width:401px) and (max-width:768px) {
+    header {
+        width: 100%;
+        padding: 10px 0px 0px 20px;
+        background-size: 45%, 120%;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 40px;
+        padding: 0px;
+    }
+
+    .hamburger i {
+        color: var(--textmenu);
+        padding: 10px 0px;
+    }
+
+    .h1 {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 38px;
+    }
+
+    .submit2 {
+        width: 38%;
+        padding: 0px;
+        margin-bottom: 220px;
+        margin-top: 50px;
+        font-size: 10px;
+    }
+
+    .section1 {
+        width: 100%;
+        padding: 70px 0px 0px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .courier {
+        /* background-size: 20%;*/
+    }
+
+    .courier img {
+        width: 90%;
+    }
+
+    .about {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .text1 {
+        width: 90%;
+        padding: 5px 0px 30px 0px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .courier {
+        width: 80%;
+    }
+
+    .section2 {
+        width: 100%;
+        padding: 70px 0px 100px 10px;
+        flex-direction: column;
+    }
+
+    .operator {
+        width: 100%;
+    }
+
+    .operator img {
+        width: 90%;
+    }
+
+    .howtoapply {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .section3 {
+        width: 100%;
+        padding: 0px 0px 0px 50px;
+    }
+
+    .pink {
+        background-size: 80%;
+    }
+
+    .item {
+        padding-top: 10px;
+    }
+
+    .faq {
+        width: 100%;
+        padding-top: 140px;
+    }
+
+    .h2 {
+        width: 90%;
+        font-size: 27px;
+    }
+
+    .pink {
+        width: 60%;
+    }
+
+    .questions {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .question1 {
+        width: 90%;
+    }
+
+    .question2 {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .button1 {
+        width: 100%;
+    }
+
+    .button2 {
+        width: 100%;
+    }
+
+    .button3 {
+        width: 100%;
+    }
+
+    .section4 {
+        width: 100%;
+        padding: 100px 0px 50px 50px;
+    }
+
+    .aboutus {
+        flex-direction: column;
+    }
+
+    .icons {
+        margin-right: 150px;
+    }
+
+    .clients {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .client {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .mainfooter {
+        padding: 5px;
+    }
+
+    .trekmobile {
+        max-width: 60%;
+    }
+
+    .form {
+        padding-top: 20px;
+    }
+
+    footer .mainfooter .form .box {
+        width: 60%;
+    }
+
+    .miniform {
+        width: 40%;
+        margin-left: 350px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    #name {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    #email {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    footer .miniform .submit2 {
+        width: 93%;
+        padding-left: 5px;
+    }
+
+    .mainfooter {
+        margin-top: 80px;
+    }
+
+    footer .mainfooter .form .box {
+        width: 100%;
+        margin-top: 100px;
+        font-size: 12px;
+    }
+
+    footer .menu {
+        clear: both;
+        visibility: hidden;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .last {
+        padding: 50px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .social {
+        width: 40%;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        width: 100%;
+        padding: 10px 0px 0px 20px;
+        background-size: 45%, 120%;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 40px;
+        padding: 0px;
+    }
+
+    .hamburger i {
+        color: var(--textmenu);
+        padding: 10px 0px;
+    }
+
+    .h1 {
+        width: 100%;
+        padding-top: 0px;
+        font-size: 24px;
+    }
+
+    .submit2 {
+        width: 38%;
+        padding: 0px;
+        margin-bottom: 120px;
+        margin-top: 20px;
+        font-size: 8px;
+    }
+
+    .section1 {
+        width: 100%;
+        padding: 70px 0px 0px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .courier {
+        /* background-size: 20%;*/
+    }
+
+    .courier img {
+        width: 90%;
+    }
+
+    .about {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .text1 {
+        width: 90%;
+        padding: 5px 0px 30px 0px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .courier {
+        width: 80%;
+    }
+
+    .section2 {
+        width: 100%;
+        padding: 70px 0px 100px 10px;
+        flex-direction: column;
+    }
+
+    .operator {
+        width: 100%;
+    }
+
+    .operator img {
+        width: 90%;
+    }
+
+    .howtoapply {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .section3 {
+        width: 100%;
+        padding: 0px 0px 0px 50px;
+    }
+
+    .pink {
+        background-size: 80%;
+    }
+
+    .item {
+        padding-top: 10px;
+    }
+
+    .faq {
+        width: 100%;
+        padding-top: 140px;
+    }
+
+    .h2 {
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .pink {
+        width: 60%;
+    }
+
+    .questions {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .question1 {
+        width: 90%;
+    }
+
+    .question2 {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .button1 {
+        width: 100%;
+    }
+
+    .button2 {
+        width: 100%;
+    }
+
+    .button3 {
+        width: 100%;
+    }
+
+    .section4 {
+        width: 100%;
+        padding: 100px 0px 50px 50px;
+    }
+
+    .aboutus {
+        flex-direction: column;
+    }
+
+    .icons {
+        margin-right: 150px;
+    }
+
+    .clients {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .client {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .mainfooter {
+        padding: 5px;
+    }
+
+    .trekmobile {
+        max-width: 60%;
+    }
+
+    .form {
+        padding-top: 20px;
+    }
+
+    footer .mainfooter .form .box {
+        width: 60%;
+    }
+
+    .miniform {
+        width: 40%;
+        margin-left: 200px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    #name {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    #email {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    footer .miniform .submit2 {
+        width: 93%;
+        padding-left: 5px;
+    }
+
+    .mainfooter {
+        margin-top: 80px;
+    }
+
+    footer .mainfooter .form .box {
+        width: 100%;
+        margin-top: 100px;
+        font-size: 12px;
+    }
+
+    footer .menu {
+        clear: both;
+        visibility: hidden;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .last {
+        padding: 50px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .social {
+        width: 40%;
+    }
+}
