@@ -39,9 +39,8 @@
 
 /*HEADER*/
 header {
-    width: 90%;
+    width: 100%;
     padding-left: 200px;
-    padding-top: 50px;
     background-image: url(../assets/images/mobel.svg), url(../assets/images/Scene.svg);
     background-repeat: no-repeat;
     background-position: left bottom, left top;
@@ -82,6 +81,15 @@ ul {
 
 li {
     width: 21%;
+}
+
+nav li:hover {
+    color: var(--coral);
+}
+
+nav #submit:hover {
+    background-color: var(--textmenu);
+    color: var(--coral)
 }
 
 #submit {
@@ -491,13 +499,14 @@ footer .mainfooter .menu {
 /*The last part under menu*/
 .last {
     width: 100%;
-    padding: 50px 150px 50px 200px;
+    padding: 50px 150px 0px 200px;
     display: flex;
     justify-content: space-between;
 }
 
 .last p {
     padding-top: 35px;
+    font-size: var(--captor);
 }
 
 .social {
@@ -513,8 +522,8 @@ footer .mainfooter .menu {
 
 @media (min-width:1097px) and (max-width:1315px) {
     header {
-        width: 98%;
-        padding: 50px 150px;
+        width: 100%;
+        padding: 0px 150px;
         background-size: 50%, 130%;
     }
 
@@ -694,6 +703,10 @@ footer .mainfooter .menu {
         margin-right: 230px;
     }
 
+    .icons a:first-child {
+        margin-right: 8px;
+    }
+
     footer {
         width: 100%;
     }
@@ -824,9 +837,13 @@ footer .mainfooter .menu {
         padding-top: 140px;
     }
 
-    .h2 {
+    h2 {
         width: 90%;
         font-size: 27px;
+    }
+
+    h3 {
+        font-size: 30px;
     }
 
     .pink {
@@ -872,6 +889,10 @@ footer .mainfooter .menu {
 
     .icons {
         margin-right: 150px;
+    }
+
+    .icons a:first-child {
+        margin-right: 8px;
     }
 
     .clients {
@@ -951,7 +972,17 @@ footer .mainfooter .menu {
     }
 
     .social {
+        width: 23%;
+        border: 1px solid;
+    }
+}
+
+@media (min-width:401px) and (max-width:541px) {
+    .miniform {
         width: 40%;
+        margin-left: 280px;
+        padding: 10px 20px;
+        font-size: 15px;
     }
 }
 
@@ -1062,8 +1093,12 @@ footer .mainfooter .menu {
         padding-top: 140px;
     }
 
-    .h2 {
+    h2 {
         width: 90%;
+        font-size: 25px;
+    }
+
+    h3 {
         font-size: 30px;
     }
 
@@ -1110,6 +1145,10 @@ footer .mainfooter .menu {
 
     .icons {
         margin-right: 150px;
+    }
+
+    .icons a:first-child {
+        margin-right: 8px;
     }
 
     .clients {
@@ -1189,6 +1228,6 @@ footer .mainfooter .menu {
     }
 
     .social {
-        width: 40%;
+        width: 30%;
     }
 }
